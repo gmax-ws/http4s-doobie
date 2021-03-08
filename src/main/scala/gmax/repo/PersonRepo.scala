@@ -37,7 +37,7 @@ object PersonRepo {
       (entity.drop(),
         entity.create(),
         entity.insert(Person(1, "John Doe", 22)),
-        entity.insert(Person(2, "Mark Bench", 13)),
+        entity.insert(Person(2, "Mark Stefano", 13)),
         entity.insert(Person(3, "Alex Doth", 45))
         ).mapN(_ + _ + _ + _ + _)
         .transact(xa)
